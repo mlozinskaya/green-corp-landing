@@ -52,6 +52,8 @@ button:hover{
 .about__sun { 
     height: 100px;
     width: 100px;
+    animation: rotation 10s linear;
+    animation-iteration-count: infinite;
 
 }
 
@@ -186,4 +188,14 @@ footer {
 
 .footer__links a{
     margin-bottom: 15px;
+}
+
+@keyframes rotation {
+    0%{
+        transform: rotate(0deg);
+    }
+
+    100%{
+        transform: rotate(360deg);
+    }
 }
