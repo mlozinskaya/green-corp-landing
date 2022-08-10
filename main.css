@@ -69,7 +69,7 @@ button:hover{
 
 .about {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     padding: 90px 0px;
     background-color: rgb(191, 219, 191);
