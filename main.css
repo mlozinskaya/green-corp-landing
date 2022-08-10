@@ -4,7 +4,6 @@ body {
     margin: 0;
 }
 
-
 header {
     position: sticky;
     z-index: 1;
@@ -16,9 +15,22 @@ header {
     padding: 20px;
 }
 
+@media (max-width: 720px) {
+    header {
+        height: 20px;
+    }
+}
+
 .header__logo {
     height: 60px;
 }
+
+@media (max-width: 720px) {
+    .header__logo {
+        height: 40px;
+    }
+}
+
 
 a {
     text-decoration: none;
@@ -49,6 +61,55 @@ button:hover{
     transition: 0.1s ease-in;
 }
 
+@media (max-width: 720px) {
+    section {
+        padding: 10px;
+    }
+}
+
+.about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 90px 0px;
+    background-color: rgb(191, 219, 191);
+}
+
+@media (max-width: 720px) {
+    .about {
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 50px 0px;
+    }
+}
+
+.about div {
+    padding: 30px;
+}
+
+.about__info {
+    max-width: 550px;
+}
+
+.about h1 {
+    margin: 0;
+    line-height: 75px;
+    font-size: 70px;
+}
+
+@media (max-width: 720px) {
+    .about h1 {
+        font-size: 36px;
+        line-height: 40px;
+    }
+}
+
+.about p {
+    line-height: 30px;
+    font-size: 18px;
+    opacity: 0.8;
+}
+
 .about__images { 
     display: flex;
     position: relative;
@@ -58,33 +119,24 @@ button:hover{
     width: 500px;
 }
 
+@media (max-width: 720px) {
+    .about__panel {
+        width: 280px;
+    }
+}
+
 .about__sun { 
-    height: 100px;
-    width: 100px;
+    width: 25%;
     animation: rotation 10s linear;
     animation-iteration-count: infinite;
     position: absolute;
 
 }
 
-.about {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding-top: 115px;
-    padding-bottom: 115px;
-    background-color: rgb(191, 219, 191);
-}
-
-.about h1 {
-    line-height: 75px;
-    font-size: 70px;
-}
-
-.about p {
-    line-height: 30px;
-    font-size: 18px;
-    opacity: 0.8;
+@media (max-width: 720px) {
+    .about__sun {
+        width: 75px;
+    }
 }
 
 .about button {
@@ -94,22 +146,32 @@ button:hover{
     margin-top: 20px;
 }
 
-.about__info {
-    max-width: 550px;
-}
-
-
 .form{
     display: flex;
     justify-content: center;
     align-content: center;
     background-color: #213053;
     color: #fff;
-    padding-bottom: 40px;
+    padding: 90px 0px;
+}
+
+@media (max-width: 720px) {
+    .form {
+        flex-direction: column;
+        padding: 50px 0px;
+    }
 }
 
 .form h1{
+    margin: 0;
     font-size: 48px;
+}
+
+@media (max-width: 720px) {
+    .form h1 {
+        font-size: 36px;
+        line-height: 40px;
+    }
 }
 
 .form p{
@@ -117,16 +179,27 @@ button:hover{
     opacity: 0.75;
 }
 
+@media (max-width: 720px) {
+    .form p {
+        padding: 10px 10px;
+    }
+}
+
 .form__info{
     text-align: center;
-    padding-top: 80px;
-    padding-bottom: 20px;
+    padding: 20px 0px;
 }
 
 .form__inputs{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+}
+
+@media (max-width: 720px) {
+    .form__inputs {
+        padding: 0px 20px;
+    }
 }
 
 .form__inputs label{
@@ -143,9 +216,6 @@ button:hover{
     appearance: none;
 }
 
-.form__inputs select{
-
-}
 
 .form__fields{
     grid-column: 1 / 4;
@@ -157,8 +227,17 @@ button:hover{
 .form__submit{
     width: 30%;
     align-self: center;
-    margin-top: 30px;
+    margin-top: 50px;
 }
+
+@media (max-width: 720px) {
+    .form__submit {
+        width: 50%;
+        margin-top: 40px;
+        white-space: nowrap;
+    }
+}
+
 
 footer {
     padding: 90px 20px 90px 20px;
@@ -166,15 +245,36 @@ footer {
     font-weight: 600;
 }
 
+@media (max-width: 720px) {
+    footer {
+        flex-direction: column;
+        padding: 0px 20px;
+    }
+}
+
 .footer__container{
     display: flex;
     justify-content: center;
+}
+
+@media (max-width: 720px) {
+    .footer__container {
+        display: block;
+        padding: 50px 0px 0px 0px;
+    }
 }
 
 .footer__copyright{
     margin-top: 40px;
     text-align: center;
     opacity: 0.5;
+}
+
+@media (max-width: 720px) {
+    .footer__copyright {
+        margin-top: 0px;
+        padding: 40px 0px;
+    }
 }
 
 .footer__group{
